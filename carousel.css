@@ -6,7 +6,7 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-
+  background-color: black;
 
 }
 
@@ -39,15 +39,15 @@ body {
 
 .navbar a {
   font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .navbar ul {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .navbar li {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 
@@ -73,7 +73,7 @@ body {
   margin: 0;
   padding: 0;
   position: absolute;
-  left: 50%;
+  left: 47%;
   margin-left: -65px;      
   opacity: 1;
   top: 110px;
@@ -105,11 +105,11 @@ body {
   padding: 0;
   position: absolute;
   color: #f2f2f2;
-  left: 50%;
+  left: 52%;
   margin-left: -155px;      
   opacity: 1;
   top: 300px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
   animation-name: moveHeaderText;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
@@ -136,12 +136,12 @@ body {
   padding: 0;
   position: absolute;
   color: #f2f2f2;
-  left: 50%;
+  left: 48%;
   margin: 10px;
   margin-left: -95px;     
   opacity: 1;
   top: 370px;
-  font-family: 'Montserrat', sans-serif;
+ font-family: 'Oswald', sans-serif;
   animation-name: moveHeaderText;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
@@ -165,7 +165,7 @@ body {
 
 
 
-/* MARKETING CONTENT
+/* PROJECTS CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the two columns */
@@ -184,15 +184,7 @@ body {
 }
 
 
-/*.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}*/
 
-/*.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}*/
 
 
 /* Featurettes
@@ -211,33 +203,39 @@ body {
 
 #education.row {
     margin-top: 80px;
-    color: #E7E2D8;
+    color: white;
     z-index: 1000;
     background-color: black;
     opacity: 0.8;
-    margin-right: -30px; 
+    margin-right: -30px;
+    font-family: 'Oswald', sans-serif; 
 
 }
 
+
 h1#education.featurette-heading {
   margin-top: 20px;
+  font-family: 'Oswald', sans-serif;
 }
 
 #projects h1 {
   margin-top: 80px;
   margin-bottom: 60px;
   margin-left: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  color: white;
 }
 
 #projects h2 {
   font-family: 'Oswald', sans-serif;
+  color: white;
 }
 
 #projects p {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 16px;
   font-weight: normal;
+  color: white;
 }
 
 #about {
@@ -255,13 +253,13 @@ h1#education.featurette-heading {
   margin-left: 20px;
   margin-bottom: 60px;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
 
 }
 
 #about p {
   font-size: 16px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Oswald', sans-serif;
   color: white;
   font-weight: normal;
   margin-left: 20px;
@@ -271,10 +269,14 @@ h1#education.featurette-heading {
 #contact h1 {
   margin-top: 80px;
   margin-bottom: 60px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
 }
 
 #contact li {
   font-size: 16px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
 }
 
 .linkContainer img {
@@ -295,7 +297,8 @@ h1#education.featurette-heading {
 
 #ga p {
   font-size: 16px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Oswald', sans-serif;
+  color: white;
 }
 
 img.featurette-image.img-responsive.center-block {
@@ -309,7 +312,7 @@ img.featurette-image.img-responsive.center-block {
 
 .col-md-7 ul {
   list-style: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Oswald', sans-serif;
   padding: 0;
   margin: 0;
   margin-left: 20px;
@@ -317,15 +320,15 @@ img.featurette-image.img-responsive.center-block {
 
 .col-md-7 li {
   font-size:  16px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Oswald', sans-serif;
   color: #5a5a5a;
   text-decoration: none;
 }
 
 #email {
-  color: #5a5a5a;
+  color: white;
   text-decoration: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 #email:hover {
@@ -334,8 +337,13 @@ img.featurette-image.img-responsive.center-block {
 }
 
 a {
-  color: #5a5a5a;
-  font-size: 20px;  
+  color: white;
+  font-size: 20px; 
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ccc;
 }
 
 #linkedin img:hover, img:focus {
@@ -376,6 +384,11 @@ a {
   margin-top: 10px;
 }
 
+.img-circle.song {
+  margin-top: 10px;
+  background-color: white;
+}
+
 img {
   margin-top: 10px;
 }
@@ -383,7 +396,7 @@ img {
 footer p {
   color: #5a5a5a;
   font-size: 15px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Oswald', sans-serif;
 
 }
 
