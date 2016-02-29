@@ -5,17 +5,30 @@ $( document ).ready(function(){
 	});
 });
 
-$( document ).ready(function(){
-	$( "#ga p").hide()
-	$( "#ga h2" ).click(function(){
-		$( "#ga p" ).show();
-	    $( this ).animate({
-			height: 70,
-			width: 400,
-		}, 1000, "linear", function(){
-			
-		})
-
+$( document ).ready( function(){
+	$( "#ga p").hide();
+	$( "#ga h2").click( function(){
+		$( "#ga p" ).slideToggle( "slow" );
 	})
+})
 
+$( document ).ready( function(){
+	$(".col-lg-4 #ga1").hover(function(){
+		console.log("damn thing rotate")
+		$(".col-lg-4 #ga1").addClass("rotate1")
+	})
+})
+
+$( document ).ready( function(){
+	$(".col-lg-4 #ga2").hover(function(){
+		console.log("damn thing rotate")
+		$(".col-lg-4 #ga2").addClass("rotate2")
+	})
+})
+
+$( document ).ready( function(){
+	$(".col-lg-4 #mem").hover(function(){
+		console.log("damn thing rotate")
+		$(".col-lg-4 #mem").addClass("rotate3")
+	})
 })

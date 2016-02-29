@@ -163,6 +163,73 @@ body {
   }
 }
 
+.homeHeaderImg > #linkedin img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  left: 47%;
+  margin: 10px;
+  margin-left: -45px;     
+  opacity: 1;
+  top: 410px;
+  animation-name: moveHeaderText;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+@keyframes moveHeaderText {
+  0% {
+    left: -380px;
+    opacity: 0;     
+  }
+  10% {
+    left: -380px;
+    opacity: 0;     
+  }
+  100% {
+    left: 50%;
+    margin-left: -95px;      
+    opacity: 1;
+  }
+}
+
+.homeHeaderImg > #github img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  left: 47%;
+  margin: 10px;
+  margin-left: 25px;     
+  opacity: 1;
+  top: 410px;
+  animation-name: moveHeaderText;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+@keyframes moveHeaderText {
+  0% {
+    left: -280px;
+    opacity: 0;     
+  }
+  10% {
+    left: -280px;
+    opacity: 0;     
+  }
+  100% {
+    left: 80%;
+    margin-left: -55px;      
+    opacity: 1;
+  }
+}
+
+
 
 
 /* PROJECTS CONTENT
@@ -291,7 +358,6 @@ h1#education.featurette-heading {
   display: inline-block;
 }
 
-
 #ga {
   border-left: 1px solid #47494A;
 }
@@ -372,13 +438,14 @@ a:hover {
 }
 
 #github img:hover {
-  opacity: .8;
-  filter:alpha(opacity=80); 
+  opacity: .6;
+  filter:alpha(opacity=60); 
 }
 
 #github img {
   margin-top: 10px;
   margin-bottom: 10px;
+
 }
 
  .col-lg-4 {
@@ -392,6 +459,30 @@ a:hover {
 .img-circle.song {
   margin-top: 10px;
   background-color: white;
+}
+
+.rotate1 {
+  transform: rotate(165deg);
+  -ms-transform: rotate(165deg); /* IE 9 */
+  -moz-transform: rotate(165deg); /* Firefox */
+  -webkit-transform: rotate(165deg); /* Safari and Chrome */
+  -o-transform: rotate(165deg); /* Opera */
+}
+
+.rotate2 {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -moz-transform: rotate(180deg); /* Firefox */
+  -webkit-transform: rotate(180deg); /* Safari and Chrome */
+  -o-transform: rotate(180deg); /* Opera */
+}
+
+.rotate3 {
+  transform: rotate(280deg);
+  -ms-transform: rotate(280deg); /* IE 9 */
+  -moz-transform: rotate(280deg); /* Firefox */
+  -webkit-transform: rotate(280deg); /* Safari and Chrome */
+  -o-transform: rotate(280deg); /* Opera */
 }
 
 img {
