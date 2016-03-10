@@ -35,10 +35,21 @@ $( document ).ready( function(){
 
 $.ajax({
 	url: "http://api.wunderground.com/api/b325241e6545289b/conditions/q/CA/Culver_City.json",
+	type: 'GET',
 	data: {
 		zipcode: 90232
 	},
+	dataType: 'jsonp',
 	success: function( data ) {
+		console.log('are we there yet?');
 		$( "#weatherTemp").html( "<strong>" + data + "<strong> degrees");
-	}
+	},
+	
 });
+
+var api_endpoint = "http://api.wunderground.com/api/b325241e6545289b/conditions/q/CA/Culver_City.json"
+$.get(api_endpoint)
+ .success(renderWeather)
+ .fail(function(){
+ 	alert("Whoa, major problemo with the api!")
+ });
