@@ -32,3 +32,13 @@ $( document ).ready( function(){
 		$(".col-lg-4 #mem").addClass("rotate3")
 	})
 })
+
+$.ajax({
+	url: "http://api.wunderground.com/api/b325241e6545289b/conditions/q/CA/Culver_City.json",
+	data: {
+		zipcode: 90232
+	},
+	success: function( data ) {
+		$( "#weatherTemp").html( "<strong>" + data + "<strong> degrees");
+	}
+});
